@@ -10,9 +10,14 @@ A powerful Python-based tool that analyzes sentiment trends and generates insigh
 - **Visualization**:
   - 7-day sentiment trend graph showing average sentiment over time
   - Word cloud visualization of common terms in discussions
+  - Daily post volume analysis
+  - Subreddit distribution pie chart
+  - Comment sentiment analysis by subreddit
+  - Time of day distribution analysis
 - **Smart Text Processing**: 
   - Removes stock symbols and short words from word clouds
   - Combines post titles and content for comprehensive analysis
+- **Top Posts Analysis**: Displays highest scoring posts with their sentiment scores
 
 ## Technical Details
 
@@ -23,6 +28,7 @@ The program uses several key technologies:
 - **Matplotlib**: Data visualization
 - **WordCloud**: Text visualization
 - **python-dotenv**: Environment variable management
+- **Seaborn**: Advanced statistical visualizations
 
 ## Setup
 
@@ -67,7 +73,8 @@ The script will:
 
 ## Output
 
-The program generates two main visualizations:
+The program generates seven main analyses:
+
 1. **Sentiment Trend Graph**: Shows the average sentiment score over the 7-day period
    - Positive values indicate bullish sentiment
    - Negative values indicate bearish sentiment
@@ -76,6 +83,26 @@ The program generates two main visualizations:
 2. **Word Cloud**: Displays the most frequently used terms in the discussions
    - Larger words indicate more frequent usage
    - Stock symbols and short words are automatically filtered out
+
+3. **Post Volume Analysis**: Bar chart showing the number of posts per day
+   - Helps identify days with high discussion activity
+   - Useful for tracking discussion momentum
+
+4. **Subreddit Distribution**: Pie chart showing post distribution across subreddits
+   - Helps understand which communities are most active
+   - Shows relative importance of different subreddits
+
+5. **Top Posts Analysis**: Displays the 5 highest-scoring posts
+   - Shows post title, score, and sentiment
+   - Helps identify most impactful discussions
+
+6. **Comment Sentiment Analysis**: Box plot showing sentiment distribution of comments by subreddit
+   - Compares comment sentiment across different subreddits
+   - Helps identify which communities are more bullish/bearish
+
+7. **Time Distribution Analysis**: Bar chart showing post activity by hour
+   - Helps identify peak discussion times
+   - Useful for understanding when the community is most active
 
 ## Limitations
 
